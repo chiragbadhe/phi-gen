@@ -45,8 +45,9 @@ export function useGenerateIdea() {
         throw new Error("Failed to save idea. Please try again.");
       }
 
-      // Reset form and redirect to home page to see the new idea
       setRawIdea("");
+      // Reload the page to show the new idea
+      window.location.reload();
     } catch (error) {
       console.error("Error generating/saving idea:", error);
       setError(

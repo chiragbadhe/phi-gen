@@ -27,10 +27,7 @@ const INITIAL_FORM_DATA: FormData = {
   description: "",
   criteria: "",
   verification_process: "",
-  links: JSON.stringify({
-    Etherscan: "https://etherscan.io/",
-    DexTools: "https://www.dextools.io/",
-  }),
+  links: JSON.stringify({}),
   type: "",
 };
 
